@@ -1,0 +1,11 @@
+{
+  "required": ["student_id", "full_name", "age", "gpa", "skills", "active"],
+  "fields": {
+    "student_id": { "type": "str", "non_blank": true },
+    "full_name": { "type": "str", "non_blank": true },
+    "age": { "type": "int", "minimum": 18, "maximum": 65 },
+    "gpa": { "type": "float", "minimum": 0.0, "maximum": 4.0 },
+    "skills": { "type": "list", "item_type": "str" },
+    "active": { "type": "bool" }
+  }
+}
